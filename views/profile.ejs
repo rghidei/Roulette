@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <title>Kitty Cafe</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="profile3">
+<div class="container">
+
+    <div id="header"class="page-header text-center">
+        <!-- <h1><span class="fa fa-coffee"></span> Casino Page</h1> -->
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+
+
+        <!-- LOCAL INFORMATION -->
+        <div id="local" class="col-sm-6 one">
+            <!-- <div id="one" class="well"> -->
+                <h3><span class="fa fa-user"></span> Local</h3>
+
+                <% if (user.local.email) { %>
+                    <p>
+                        <strong>id</strong>: <%= user._id %><br>
+                        <strong>email</strong>: <%= user.local.email %><br>
+                        <strong>password</strong>: <%= user.local.password %>
+                    </p>
+
+                    <a href="/unlink/local" class="btn btn-default">Unlink</a>
+                <% } else { %>
+                    <a href="/connect/local" class="btn btn-default">Connect Local</a>
+                <% } %>
+
+            <!-- </div> -->
+        </div>
+        <div id="balance">
+          <h3 id="hThree">Casino Balance</h3>
+          <span class="casino" >Casino Winnings: $<%= winnings %></span>
+          <span class="casino" >Casino Losses: $<%= losses %></span>
+          <span class="casino" >Casino Net Profit: $<%= winnings + losses %> </span>
+        </div>
+        <div id="list" class="col-sm-6 two">
+          <h3>Bet transactions</h3>
+          <ul class="messages">
+          <% for(var i=0; i<messages.length; i++) {%>
+            <li class="message">
+              <span class="name">Bet made: $<%= messages[i].bet %></span>
+              <span class="name">Color: <%= messages[i].color %></span>
+              <span class="name">Gained: $<%= messages[i].moneyWon %></span>
+              <span class="name">Lost: $<%= messages[i].moneyLost %></span>
+              <span class="time name">Time: <%= messages[i].timestamp %></span>
+            </li>
+          <% } %>
+          </ul>
+</div>
+
+
+</body>
+</html>

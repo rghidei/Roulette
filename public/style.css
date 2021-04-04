@@ -1,0 +1,234 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+}
+#profile1{
+  background-image: url('2.png');
+  background-repeat: no-repeat;
+  background-size: 100% 750px;
+}
+#profile2{
+  background-image: url('3.png');
+  background-repeat: no-repeat;
+  background-size: 100% 750px;
+}
+#profile3{
+  background-image: url('1.png');
+  background-repeat: no-repeat;
+  background-size: 100% 750px;
+}
+#profile4{
+  background-image: url('4.png');
+  background-repeat: no-repeat;
+  background-size: 100% 750px;
+}
+/* Profile */
+/* header */
+/* #header{
+  padding-bottom: 5%;
+} */
+/* local info */
+#local{
+  height: 235px;
+  width: 280px;
+  /* margin-top: 0%;
+  margin-left: 0%; */
+  /* background-color: rgb(181,164,156); */
+  border-radius: 30px;
+  position: absolute;
+  top: 180px;
+  left: 100px;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 30px;
+}
+/* casino totals */
+#balance{
+  height: auto;
+  width: auto;
+  position: absolute;
+  bottom: 140px;
+  left: 117px;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 30px;
+  padding: 2%;
+}
+/* list of all the transaction */
+#list{
+  height: 400px;
+  width: 33%;
+  position: absolute;
+  top: 190px;
+  right: 100px;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 30px;
+  overflow-y: scroll;
+}
+#hThree{
+  margin-top: 10px
+}
+/* ul */
+.message{
+  margin: 5%;
+  padding: 5%;
+  border: 2px solid white;
+  /* background-color: rgba(255, 255, 255, .5); */
+  border-radius: 30px;
+}
+/* span messages*/
+.name{
+  display: block;
+}
+/* span casion */
+.casino{
+  display: block;
+}
+#title{
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 30px;
+  display: inline-block;
+  position: absolute;
+  top: 265px;
+  left: 100px;
+  padding: 1%;
+}
+
+/* Index */
+/* user input  */
+#casinoLogin{
+  /* position: absolute;
+  bottom: 180px;
+  left: 136px; */
+  background-color: rgba(255, 255, 255, .5);
+  height: auto;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 1%;
+}
+#inputBet{
+  width: auto;
+  position: absolute;
+  top: 275px;
+  right: 80px;
+  text-align: center;
+  /* background-color: rgb(181,164,156); */
+  height: auto;
+  padding: 2%;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 30px;
+}
+#colorInput{
+  height: 35px;
+  font-size: 16px;
+  border: 2px solid black;
+}
+#submitPost, #btn{
+  margin: 2%;
+  font-size: 16px;
+  padding: 2%;
+  border: 2px solid black;
+}
+#moneyBet{
+  border: 2px solid black;
+  padding: 2%;
+  font-size: 16px;
+  width: auto;
+  display: block;
+}
+.results{
+  width: auto;
+  position: absolute;
+  top: 420px;
+  left: 117px;
+  text-align: center;
+  height: auto;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 30px;
+  display: none;
+  padding: 2%;
+}
+#wheel{
+  position: relative;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  /* background-color: rgb(181,164,156);
+
+  border: 2px solid white;
+  border-radius: 30px; */
+
+  }
+
+#wheel::before{
+  content: "";
+  background-image: url(img/wheel.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  transform: rotate(43deg);
+  z-index: 0;
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  border: 1px solid yellow;
+  transition: all 4s ease;
+  top: -20px;
+  right: -160px;
+}
+
+
+#ball{
+  border-radius: 50%;
+  background-image: url(img/ball.png);
+  height: 35px;
+  width: 35px;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 75px;
+  left: 350px;
+  transform: translate(-50%, -50%);
+}
+
+/* login */
+
+#loginBox{
+  position: absolute;
+      top: 240px;
+      right: 50%;
+      width: 20%;
+      height: auto;
+      border: 2px solid white;
+      background-color: rgba(255, 255, 255, .5);
+      border-radius: 30px;
+      margin-left: 0%;
+      transform: translateX(50%);
+}
+
+
+img{
+  height: 200px;
+}
+.hide{
+  display: hide;
+}
+
+/* sign up */
+
+#signBox{
+  position: absolute;
+  top: 240px;
+  right: 50%;
+  width: 20%;
+  height: auto;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 30px;
+  margin-left: 0%;
+  transform: translateX(50%);
+}
