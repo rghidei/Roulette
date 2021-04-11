@@ -4,6 +4,7 @@
 // get all the tools we need
 var express  = require('express');
 var app      = express();
+require('dotenv').config()
 var port     = process.env.PORT || 8080;
 const MongoClient = require('mongodb').MongoClient
 var mongoose = require('mongoose');
@@ -15,12 +16,13 @@ var cookieParser = require('cookie-parser');
 var bodyParser   = require('body-parser');
 var session      = require('express-session');
 
-var configDB = require('./config/database.js');
+const DB_NAME = process.env.DB_NAME
+const DB_URL =process.env.DB_URL+`/${DB_NAME}`
 
 var db
 
 // configuration ===============================================================
-mongoose.connect(configDB.url, (err, database) => {
+mongoose.connect(DB_URL, (err, database) => {
   if (err) return console.log(err)
   db = database
   require('./app/routes.js')(app, passport, db);
