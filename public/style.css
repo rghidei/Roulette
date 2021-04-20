@@ -91,7 +91,7 @@ body{
   border-radius: 30px;
   display: inline-block;
   position: absolute;
-  top: 265px;
+  top: 165px;
   left: 100px;
   padding: 1%;
 }
@@ -99,9 +99,9 @@ body{
 /* Index */
 /* user input  */
 #casinoLogin{
-  /* position: absolute;
-  bottom: 180px;
-  left: 136px; */
+  position: absolute;
+  bottom: 245px;
+  left: 115px;
   background-color: rgba(255, 255, 255, .5);
   height: auto;
   border: 2px solid white;
@@ -112,7 +112,7 @@ body{
   width: auto;
   position: absolute;
   top: 275px;
-  right: 80px;
+  right: 90px;
   text-align: center;
   /* background-color: rgb(181,164,156); */
   height: auto;
@@ -142,8 +142,8 @@ body{
 .results{
   width: auto;
   position: absolute;
-  top: 420px;
-  left: 117px;
+  top: 300px;
+  left: 485px;
   text-align: center;
   height: auto;
   border: 2px solid white;
@@ -177,7 +177,7 @@ body{
   width: 400px;
   border: 1px solid yellow;
   transition: all 4s ease;
-  top: -20px;
+  top: 100px;
   right: -160px;
 }
 
@@ -190,7 +190,7 @@ body{
   background-size: cover;
   background-position: center;
   position: absolute;
-  top: 75px;
+  top: 195px;
   left: 350px;
   transform: translate(-50%, -50%);
 }

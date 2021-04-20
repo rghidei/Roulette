@@ -1,13 +1,3 @@
-// for every value/ slot it is assigned a color
-//Math.random will choose a random property
-//compare that answer to the bet you choose
-//if user chooses red, and math.random choses an even number,
-//even numbers are red, that means the user wins double what they bet
-
-// let money = 10000
-// const min = document.querySelector('#min')
-// const max = document.querySelector('#max')
-// document.getElementById('btn').addEventListener('click', reset)
 var style = document.createElement("style");
 document.head.appendChild(style)
 sheet = style.sheet
@@ -108,11 +98,6 @@ function playGame(){
   let moneyWon = 0;
   let moneyLost = 0;
 
-  console.log(`This is the input color: ${color}`)
-  console.log(`This is the bet: ${bet}`)
-  console.log(`This is the result: ${result}`)
-  console.log('one')
-  console.log('two')
 
 
   sheet.addRule('#wheel::before',`transition: all 4s ease !important`)
@@ -122,26 +107,21 @@ function playGame(){
     //user wins the color
   // casino = bet
    total = bet * 3
-   status = 'You Won ' + bet + " ! :)"
+   status = 'You Won $' + bet + " ! :)"
     moneyLost = bet * -1
     console.log(moneyLost)
     console.log(Object.keys(board)[result])
   }else if(color === Object.values(board)[result] || Object.values(board)[result] == "green") {
     total = bet * 2
-      status = 'You Won ' + total + " ! :)"
+      status = 'You Won $' + total + " ! :)"
      moneyLost = bet * -1
      console.log(moneyLost)
      console.log(Object.keys(board)[result])
   } else {
-    status = 'You Lost ' + bet + " ! :("
+    status = 'You Lost $' + bet + " ! :("
     moneyWon = bet
-    console.log(moneyWon)
-    console.log(Object.keys(board)[result])
   }
 
-
-  console.log(moneyWon)
-  console.log(moneyLost)
 
   fetch('messages', {
     method: 'post',
@@ -169,37 +149,6 @@ function playGame(){
       sheet.addRule('#wheel::before',`transform: rotate(43deg)`)
     }, 10000)
   }, 3000)
-  console.log('three')
 
 
 }
-
-// var trash = document.getElementsByClassName("fa-trash");
-
-// const trashCan = document.querySelectorAll('.delete')
-// for(element of trashCan){
-//   element.addEventListener('click', deletePost)
-//   console.log(element)
-// }
-//   console.log(element)
-//   function deletePost(){
-//     console.log('hi')
-//   }
-// Array.from(trash).forEach(function(element) {
-//       element.addEventListener('click', function(){
-//         console.log('hello')
-//         const timestamp = this.parentNode.parentNode.querySelector('.time').innerText
-//
-//         fetch('messages', {
-//           method: 'delete',
-//           headers: {
-//             'Content-Type': 'application/json'
-//           },
-//           body: JSON.stringify({
-//             'timestamp': timestamp
-//           })
-//         }).then(function (response) {
-//           window.location.reload()
-//         })
-//       });
-// });
