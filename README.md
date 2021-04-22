@@ -3,7 +3,7 @@
 
 -I created a website for a small cafe, where the cashier can plug in customers orders. The barista in the kitchen can login in and to check what the orders are and delete them once they complete the order.  
 
-[Checkout my portfolio to see live app](https://rodasghidei.netlify.app/)
+[Checkout my live app](https://roulettefun.herokuapp.com/)
 
 ![Kitty Cafe](public/rouletteScreenshot.png)
 
@@ -25,8 +25,10 @@
 ## Other Projects
 [To-Do-List - Express](https://personalexpressflowers.herokuapp.com/)
 [Show-Off-Your-Style - FullStackLogin](https://show-your-style.herokuapp.com/)
-[Kitty-Cafe- - FullStackLogin](https://kitty-barista-cafe.herokuapp.com/)
-[Bloom-Cafe- - FullStackLogin](https://bloom-cafe.herokuapp.com/)
+[Kitty-Cafe - FullStackLogin](https://kitty-barista-cafe.herokuapp.com/)
+[Bloom-Cafe - FullStackLogin](https://bloom-cafe.herokuapp.com/)
+[Roulette-Fun - FullStackLogin](https://bloom-cafe.herokuapp.com/)
+
 ## Installation
 
 1. Clone repo
