@@ -1,7 +1,7 @@
 
-## FullStack App Login Personal 1
+## FullStack App  Casino Roulette Game
 
--I created a website for a small cafe, where the cashier can plug in customers orders. The barista in the kitchen can login in and to check what the orders are and delete them once they complete the order.  
+-Created a full stack application for a Casino Roulette game that allows players to bet money and get a chance to win double what they bet. The wins,  and  losses of the players, and the gains and looses of the casino are being saved in to a database. When admin logs in, they are able to see the games played and the net profit.
 
 [Checkout my live app](https://roulettefun.herokuapp.com/)
 
