@@ -5,7 +5,7 @@
 
 [Checkout my live app](https://roulettefun.herokuapp.com/)
 
-![Kitty Cafe](public/rouletteScreenshot.png)
+![Roulette](public/rouletteScreenshot.png)
 
 ## How It's Made:
 
